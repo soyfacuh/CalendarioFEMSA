@@ -1,0 +1,164 @@
+/* Estilos generales */
+/* Estilos generales */
+/* Estilos generales */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E2001A; /* Rojo Coca-Cola */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 90%;
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el encabezado */
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+/* Estilos para los selectores */
+.selectors {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.dropdown {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.dropdown label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555; /* Color de texto más suave */
+}
+
+.dropdown select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Estilos para la barra de búsqueda */
+.search {
+    margin-top: 30px;
+}
+
+.search button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #E2001A;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efecto de transición suave */
+}
+
+.search button:hover {
+    background-color: #b30015; /* Color ligeramente más oscuro al pasar el ratón */
+}
+
+/* Estilos para el calendario */
+.calendar {
+    padding: 20px;
+    background-color: #f5f5f5; /* Color de fondo ligeramente más claro */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+/* Media queries para mejorar la apariencia en dispositivos móviles */
+/* Media queries para mejorar la apariencia en dispositivos móviles */
+/* Media queries para mejorar la apariencia en dispositivos móviles */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Aumentar el espacio alrededor del contenido */
+    }
+
+    header h1 {
+        font-size: 24px; /* Aumentar el tamaño del título */
+    }
+
+    header img {
+        width: 120px; /* Reducir el tamaño del logotipo */
+    }
+
+    .selectors {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px; /* Restaurar el margen superior */
+    }
+
+    .dropdown {
+        flex: 1;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .search {
+        margin-top: 20px; /* Restaurar el margen superior */
+    }
+
+    /* Agregar reglas de estilo para el contenedor de la lista desplegable */
+    .dropdown select {
+        width: calc(100% - 20px); /* Ajustar el ancho del select para compensar el padding */
+        padding: 10px; /* Aumentar el relleno para mejorar la usabilidad */
+    }
+
+    /* Estilo mejorado para el título */
+    header h1 {
+        font-size: 24px;
+        color: #333; /* Cambiar el color del título para mejor contraste */
+    }
+
+    /* Estilo mejorado para el contenedor */
+    .container {
+        max-width: 90%; /* Ajustar el ancho máximo para que se vea mejor en pantallas pequeñas */
+        background-color: #f9f9f9; /* Cambiar el color de fondo para un aspecto más limpio */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Reducir la intensidad de la sombra */
+    }
+
+    /* Estilo mejorado para el contenedor de la lista desplegable */
+    .dropdown {
+        margin-top: 10px; /* Ajustar el margen superior */
+    }
+
+    /* Estilo mejorado para el botón de búsqueda */
+    .search button {
+        padding: 10px 20px; /* Aumentar el relleno para mejorar la usabilidad */
+        font-size: 16px; /* Ajustar el tamaño de la fuente del botón */
+        background-color: #E2001A; /* Cambiar el color de fondo para que coincida con el tema */
+        color: #fff; /* Cambiar el color del texto para mejor contraste */
+        border: none; /* Eliminar el borde para un aspecto más limpio */
+        border-radius: 5px; /* Agregar bordes redondeados */
+        cursor: pointer; /* Cambiar el cursor al pasar el ratón para indicar que es interactivo */
+    }
+}
